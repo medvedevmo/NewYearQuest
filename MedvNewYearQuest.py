@@ -1,14 +1,14 @@
 # Вам нужно загрузить BeautifulSoup и requests!
 # pip install beautifulsoup4
 # pip install requests
-from bs4 import BeautifulSoup
-import requests
+from bs4 import BeautifulSoup # добавляем библиотеку BeautifulSoup
+import requests # добавляем библиотеку requests
 # Начало
 print('Начало игры.')
 print('Вы являетесь дедом морозом. Вам нужно набрать как можно большую скорость для ваших санок')
 print('Санки поломаны. Починить или собрать новые?')
-answer = input().lower()
-while answer != 'починить' and answer != 'собрать новые':
+answer = input().lower() # Преобразуем ввод пользователем в нижний регистр
+while answer != 'починить' and answer != 'собрать новые': # проверка пользовательского ввода
     print('Неверный ответ')
     answer = input().lower()
 if answer == 'починить':
